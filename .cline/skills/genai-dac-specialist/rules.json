@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Skill activation rules for genai-dac-specialist",
+  "rules": [
+    {
+      "skill": "genai-dac-specialist",
+      "triggers": {
+        "keywords": ["DAC", "Dedicated AI Cluster", "GenAI cluster", "fine-tuning OCI", "Cohere", "Command R", "unit count"],
+        "intentPatterns": ["deploy.*genai", "create.*cluster", "fine-tune.*OCI", "DAC.*sizing"]
+      }
+    }
+  ]
+}

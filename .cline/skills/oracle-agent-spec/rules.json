@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Skill activation rules for oracle-agent-spec",
+  "rules": [
+    {
+      "skill": "oracle-agent-spec",
+      "triggers": {
+        "keywords": ["agent specification", "agent spec", "portable agent", "agent YAML", "agent JSON"],
+        "intentPatterns": ["define.*agent", "agent.*config", "specification.*agent"]
+      }
+    }
+  ]
+}

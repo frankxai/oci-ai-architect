@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Skill auto-activation rules for OCI AI Architect",
+  "rules": [
+    {
+      "skill": "oci-services-expert",
+      "triggers": {
+        "keywords": ["OCI", "Oracle Cloud", "compartment", "tenancy", "OCID", "Vision", "Speech", "Language", "Document Understanding"],
+        "filePatterns": ["**/oci*.tf", "**/oracle*.py"],
+        "intentPatterns": ["deploy.*OCI", "oracle.*infrastructure", "OCI.*service"]
+      }
+    },
+    {
+      "skill": "genai-dac-specialist",
+      "triggers": {
+        "keywords": ["DAC", "Dedicated AI Cluster", "GenAI cluster", "fine-tuning OCI", "Cohere", "Command R", "unit count"],
+        "intentPatterns": ["deploy.*genai", "create.*cluster", "fine-tune.*OCI", "DAC.*sizing"]
+      }
+    },
+    {
+      "skill": "oracle-adk",
+      "triggers": {
+        "keywords": ["ADK", "Agent Development Kit", "Oracle agent", "function tools", "multi-agent"],
+        "intentPatterns": ["build.*agent", "oracle.*agent", "ADK.*pattern"]
+      }
+    },
+    {
+      "skill": "oracle-agent-spec",
+      "triggers": {
+        "keywords": ["agent specification", "agent spec", "portable agent", "agent YAML", "agent JSON"],
+        "intentPatterns": ["define.*agent", "agent.*config", "specification.*agent"]
+      }
+    },
+    {
+      "skill": "rag-expert",
+      "triggers": {
+        "keywords": ["RAG", "retrieval", "knowledge base", "GenAI Agents", "OCI Search", "OpenSearch"],
+        "intentPatterns": ["build.*RAG", "create.*knowledge base", "implement.*retrieval"]
+      }
+    },
+    {
+      "skill": "mcp-architecture",
+      "triggers": {
+        "keywords": ["MCP", "Model Context Protocol", "MCP server", "Oracle MCP"],
+        "intentPatterns": ["build.*MCP", "create.*MCP server", "oracle.*MCP"]
+      }
+    }
+  ]
+}

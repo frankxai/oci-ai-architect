@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Skill activation rules for oci-services-expert",
+  "rules": [
+    {
+      "skill": "oci-services-expert",
+      "triggers": {
+        "keywords": ["OCI", "Oracle Cloud", "compartment", "tenancy", "OCID", "Vision", "Speech", "Language", "Document Understanding"],
+        "filePatterns": ["**/oci*.tf", "**/oracle*.py"],
+        "intentPatterns": ["deploy.*OCI", "oracle.*infrastructure", "OCI.*service"]
+      }
+    }
+  ]
+}

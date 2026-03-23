@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Skill activation rules for oracle-adk",
+  "rules": [
+    {
+      "skill": "oracle-adk",
+      "triggers": {
+        "keywords": ["ADK", "Agent Development Kit", "Oracle agent", "function tools", "multi-agent"],
+        "intentPatterns": ["build.*agent", "oracle.*agent", "ADK.*pattern"]
+      }
+    }
+  ]
+}
